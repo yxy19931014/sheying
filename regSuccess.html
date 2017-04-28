@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册成功</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/regSuccess.css">
+    <script src="lib/jquery/jquery-1.12.2.js"></script>
+</head>
+<body>
+    <div class="success">恭喜您，注册成功！</div>
+    <div class="loginHref">
+        <span class="time">5</span>秒后自动跳转到登录页面
+    </div>
+    <a href="index.html"id="cancle">取消</a>
+<script>
+    var time=parseInt($(".time").html());
+    var timer=setInterval(function () {
+        time--;
+        $(".time").html(time);
+        if(time<=0){
+            location.href="login.html";
+        }
+    },1000);
+    $("#cancle").click(function () {
+        location.href="index.html";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/loginSuccess.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery/jquery-1.12.2.js"></script>
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="w">
+        <ul>
+            <li class="first"><a href="index.html">首页</a></li>
+            <li class="myphoto"><a href="javascript:;">我的照片</a></li>
+            <li class="orderform"><a href="javascript:;">我的订单</a></li>
+        </ul>
+    </div>
+</header>
+<!--内容部分-->
+<div class="content">
+    <div class="w">
+        <div class="con_left">
+            <h2>亲爱的 <span></span>
+                <br>&nbsp;&nbsp;&nbsp;欢迎您</h2>
+            <div class="photo"></div>
+        </div>
+        <div class="con_right">
+            <ul class="tab">
+                <li class="tuijian">
+                    <h3>最新推荐</h3>
+                    <ul class="newtui">
+                        <li>
+                            <div class='clearfix'>
+                                <h5>韩都baby儿童摄影超值套餐￥2219元</h5>
+                                <a href=""class='fl'><img src="imgs/m1.jpg" alt=""></a>
+                                <i class='fl'>2219RMB</i>
+                                <div class='fl taoprice'>PACKAGE A</div>
+                            </div>
+                            <p>提供宝宝服装3套 相册：10*10韩式一体册，入册26张。</p>
+                            <p>精美成品：10寸拉米娜摆台一款，精美宝宝卡两张。赠送底片26张。</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="photos"id="photo">
+                    <h3>我的照片</h3>
+                    <ul class="items">
+                        <div class="selectDate">
+                            <h3>请选择您想查看的照片的日期</h3>
+                            <div class="date"></div>
+                        </div>
+                        <div class="selected">
+                            <h4>亲，您的照片正在制作中，请耐心等待</h4>
+                        </div>
+                    </ul>
+                        <!--页码-->
+                    <div class="holder">
+                    </div>
+                </li>
+                <li class="form"id="orderform">
+                    <h3>我的订单</h3>
+                    <div class="orders">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--评论区域-->
+<div class="discuss clearfix">
+    <h2>我的评论</h2>
+    <div class="w">
+        <div class="left">
+            <ul class='discussClass'>
+                <li>我的评论</li>
+                <li>发表评论</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="showDiscuss">
+                <ul>
+                </ul>
+            </div>
+            <div class='writeDiscuss'>
+                <textarea name="" id="discussCon" cols="30" rows="10">
+
+                </textarea>
+                <input type="button"value='提交'class='submit'>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="w">
+
+        <div class="link">
+            <h2>相关链接</h2>
+            <div>
+
+                <a href='http://sanya.v2.net.cn' target='_blank'>三亚婚纱摄影</a>
+
+                <a href='http://www.giexya.com' target='_blank'>干洗连锁</a>
+
+                <a href='http://fmcz.forusbaby.com' target='_blank'>去美国生孩子</a>
+
+                <a href='http://www.nnguphoto.com/' target='_blank'>南宁婚纱摄影</a>
+
+                <a href='http://yingtong.jiameng.com' target='_blank'>母婴生活馆加盟</a>
+
+                <a href='http://www.siteloop.net/' target='_blank'>网站查</a>
+
+                <a href='http://www.touch-baby.com' target='_blank'>上海儿童摄影</a>
+
+                <a href='http://www.8-888.cn' target='_blank'>世纪新闻</a>
+
+                <a href='http://nc.focus.cn' target='_blank'>南昌房产网</a>
+
+                <a href='http://www.meerlove.com' target='_blank'>成都摄影工作室</a>
+
+                <a href='http://www.gzartiz.com/' target='_blank'>北京婚纱摄影</a>
+
+                <a href='http://www.artiz1314.com/' target='_blank'>天津婚纱摄影</a>
+
+                <a href='http://www.shtotem.com' target='_blank'>金属条码</a>
+
+                <a href='http://www.sunghost.cn' target='_blank'>上科互联</a>
+
+                <a href='http://www.hunsha11.com' target='_blank'>北京婚纱摄影</a>
+
+                <a href='http://ganxi.dqdaily.com' target='_blank'>洗衣店加盟</a>
+
+                <a href='http://www.qgqc.cn' target='_blank'>厦门婚纱摄影</a>
+
+                <a href='http://www.forusbaby.com' target='_blank'>赴美生子</a>
+
+                <a href='http://www.officese.com' target='_blank'>中华写字楼网</a>
+
+                <a href='http://www.forusbaby.com.cn' target='_blank'>赴美产子</a>
+            </div>
+        </div>
+        <div class="f3">
+            <div class="f4 clearfix">
+                <dl style="padding:0; background:none;">
+                    <dt><a href="/baby/aboutus.html" title="关于我们"></a></dt>
+                    <dd><a href="/baby/aboutus.html" title="关于我们">关于我们 ABOUT US</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="/baby/contact.html" title="联系我们"></a></dt>
+                    <dd><a title="联系我们" href="/baby/contact.html">联系我们 CONTACT US</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="/hotnews/" title="新闻中心"></a></dt>
+                    <dd><a href="/hotnews/" title="公司新闻">公司新闻 NEWS</a></dd>
+                    <dd><a href="/child/" title="育儿知识">育儿知识 KNOWLOAGE</a></dd>
+                    <dd><a href="/tips/" title="服务小贴士">服务小贴士 TIPS</a></dd>
+                    <dd><a href="/huodong/" title="最新活动">最新活动 EVENT</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="/wedding/" title="作品欣赏"></a></dt>
+                    <dd><a href="/wedding/" title="最新客片">作品欣赏 WEDDING</a></dd>
+                    <dd><a href="/customer/" title="客片欣赏">客片欣赏 SHOW CASE</a></dd>
+                    <dd><a href="/dress/" title="宝宝服装">宝宝服装 DRESS</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="/service/" title="服务报价"></a></dt>
+                    <dd><a href="/service/" title="宝宝摄影服务">宝宝摄影服务 PRISE</a></dd>
+                </dl>
+                <div class="clear"></div>
+            </div>
+            <div class="code">
+                <img src="imgs/code.jpg" alt="">
+                <h2>亲亲儿童摄影</h2>
+            </div>
+            <p style="color:#996600">
+                <br><br>Seoul Baby Studio隶属于韩艺投资管理（上海）有限公司
+
+                <br>公司地址：徐汇区襄阳南路（近建国西路）
+
+                <br>公司电话：Tel :13818227576</p>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</footer>
+<!--模板-->
+<script src='lib/cookie/jquery.cookie.js'></script>
+<script src="lib/template/template-native.js"></script>
+<script type="text/template"id="dateId">
+    <%for(var i=0;i<rows.length;i++){%>
+        <a href="javasrcipt:;"><%=rows[i].bookDate%></a>
+    <%}%>
+</script>
+<script type="text/template"id="photoId">
+    <%for(var i=0;i<photo.length;i++){%>
+        <div class="img">
+            <img src="api/img/<%=photo[i].photo%>" alt="">
+            <div></div>
+            <input type="checkbox">
+        </div><br>
+    <%}%>
+
+</script>
+<script type="text/template"id="orderId">
+    <%for(var i=0;i<rows.length;i++){%>
+    <p>
+        <span class="code">单号</span>
+        <i class="code"><%=rows[i].bookcode%></i>
+        <span class="price">价格</span>
+        <i class="price"><%=rows[i].bookprice%></i>
+        <span class="kind">套餐类型</span>
+        <i class="kind"><%=rows[i].bookclass%></i>
+        <i class="orderDate"><%=rows[i].bookDate%></i>
+        <span class="orderDate">订单日期</span>
+    </p>
+    <%}%>
+</script>
+<script type='text/template'id='newtuiTpl'>
+    <%for(var i=0;i<result.length;i++){%>
+    <li>
+        <div class='clearfix'>
+            <h5>韩都baby儿童摄影超值套餐￥<%=result[i].price%>元</h5>
+            <a href=""class='fl'><img src="imgs/m<%=i+1%>.jpg" alt=""></a>
+            <i class='fl'><%=result[i].price%>RMB</i>
+            <div class='fl taoprice'><%=result[i].class%></div>
+        </div>
+        <p><%=result[i].cloth%></p>
+        <p><%=result[i].perfact%></p>
+    </li>
+    <%}%>
+</script>
+<script>
+//    获取用户名
+    var user=$.cookie('username');
+    $(".con_left h2 span").html(user);
+
+//    获取头像
+    $.ajax({
+        type:"get",
+        url:"api/findImg.php",
+        data:{
+            user:user,
+        },
+        success:function (data) {
+            $(".photo").html("<img src=api/"+data+">");
+        }
+    })
+//    tab栏切换
+    var date='';
+    $(".myphoto").click(function () {
+        $(".tab>li").hide();
+        $(".photos").show();
+        $(".photos .holder").html("");
+        $(".con_right li >h3 input").remove();
+        $(".selectDate").show();
+        $('.selected').hide();
+        //        点击我的照片，显示对应的拍摄照片的时间
+        $(".con_right li >h3 span").remove();
+            $.ajax({
+                type:"get",
+                url:"api/findDate.php",
+                data:{
+                    user:user
+                },
+                success:function (data) {
+                    var html=template("dateId",data);
+                    $(".date").html(html);
+                    //    点击日期，查找对应的照片
+                    $(".date a").click(function () {
+                        $(".photos .items li").remove();
+                        $(".con_right li >h3 span").remove();
+                        date=$(this).html();
+                        $.ajax({
+                            type:"get",
+                            url:"api/findPhoto.php",
+                            data:{
+                                date:date
+                            },
+                            success:function (data) {
+                                if(data.photo[0].type==0){
+                                    $('.selectDate').hide();
+                                    $('.selected').show();
+                                }else{
+                                    $(".selectDate").hide();
+                                    $(".selected").hide();
+                                    $(".con_right li >h3").append("<input type='button'value='双击确定'id='sure'>");
+                                    var total=data.total;
+                                    var page=parseInt(total/8);
+                                    var num=total%8;
+                                    //将接收到的图片模板进行分页
+                                    var html=template("photoId",data);
+                                    var arr=html.split("<br>");
+                                    //                将分页的图片渲染到页面中
+                                    for(var i=0;i<page;i++){
+                                        $(".photos .items").append("<li></li>");
+                                        $(".holder").append("<a href='javascript:;'>"+(i+1)+"</a>");
+                                        for(var j=0;j<8;j++){
+                                            $(".photos .items li:eq("+i+")").append(arr[i*8+j]);
+                                        }
+                                    }
+                                    //                对不足满页的图片进行渲染
+                                    if(num!=0){
+                                        $(".photos .items").append("<li class='last'></li>");
+                                        $(".holder").append("<a href='javascript:;'>"+(page+1)+"</a>");
+                                        for(var i=0;i<num;i++){
+                                            $(".photos .items .last").append(arr[page*8+i]);
+                                        }
+                                    }
+                                    //                设置页码在中心位置
+                                    var holderWidth=$(".holder").width();
+                                    $(".holder").css({
+                                        marginLeft:-holderWidth/2
+                                    });
+                                    //                点击页码切换页
+                                    $(".holder").on("click","a",function () {
+                                        var index=parseInt($(this).html())-1;
+                                        $(".photos .items li").hide();
+                                        $(".photos .items li:eq("+index+")").show();
+                                    });
+                                }
+
+                            }
+                        })
+                    });
+                }
+            });
+    });
+
+
+//    tab栏切换
+    $(".orderform").click(function () {
+        $(".tab>li").hide();
+        $("#orderform").show();
+//        根据用户名查找订单号
+        $.ajax({
+            type:"get",
+            url:"api/findOrder.php",
+            data:{
+                user:user
+            },
+            success:function (data) {
+                var html=template("orderId",data);
+                $(".orders").html(html);
+            }
+        })
+    });
+
+//    选好照片后点确定按钮
+    $(".con_right li >h3").on("click","#sure",function () {
+        $(".con_right li >h3 span").remove();
+        var checks=$(".img input");
+        var count=0;
+        checks.each(function (index,obj) {
+            if($(obj).prop("checked")==true){
+                count++;
+            }
+        });
+        if(count<8){
+            $(".con_right li >h3").append("<span>请至少保留8张照片</span>");
+            $(".con_right li >h3").find("#sure").css("background","#ccc");
+            checks.change(function () {
+                count=0;
+                checks.each(function (index,obj) {
+                    if($(obj).prop("checked")==true){
+                        count++;
+                    }
+                });
+                if(count>=8){
+                    $(".con_right li >h3").find("#sure").css("background","#4cae4c");
+                    $(".con_right li >h3 span").remove();
+                }
+            });
+            return;
+        }
+        //    照片大于8张发送请求
+        //    点击确定按钮删除照片
+        $(".con_right li >h3").on("click","#sure",function () {
+            var imgSrc=[];
+            var src="";
+            var checks=$(".items .img input");
+            checks.each(function (index,obj) {
+                if($(obj).prop("checked")==false){
+                    src=$(obj).prev("div").prev("img").attr("src");
+                    var start=src.indexOf("g");
+                    imgSrc.push(src.slice(start+2));
+                }
+            });
+
+            var strImg=JSON.stringify(imgSrc);
+            $.ajax({
+                type:"get",
+                url:"api/deletePhoto.php",
+                dataType:'json',
+                data:{
+                    imgs:strImg,
+                    date:date
+                },
+                success:function (data) {
+                    if(data.status=='ok'){
+                        $('.selected').show();
+                    }
+                }
+            });
+        });
+    });
+
+
+//    评论
+    getDiscuss();
+    $('.right div:eq(1)').hide();
+    $('.left ul li:eq(0)').click(getDiscuss);
+    $('.discussClass li').click(function () {
+        $('.discussClass li').css('background','#fff');
+        $(this).css('background','#3EAEA0');
+        $('.right div:eq('+$(this).index()+')').show().siblings('div').hide();
+    });
+//    提交评论
+    $('.submit').click(function () {
+        var discussCon=$('#discussCon').val();
+        $.ajax({
+            type:'get',
+            url:'api/discuss.php',
+            data:{
+                user:user,
+                discuss:discussCon,
+            },
+            dataType:'json',
+            success:function (data) {
+                if(data.status=='ok'){
+                    $('#discussCon').val("");
+                }
+            }
+        });
+
+    });
+    function getDiscuss() {
+        $.ajax({
+            type:'get',
+            url:'api/findDiscuss.php',
+            data:{
+                user:user
+            },
+            dataType:'json',
+            success:function (data) {
+                console.log(data);
+                $('.showDiscuss ul').html('');
+                data.result.forEach(function (item) {
+                    $('.showDiscuss ul').append('<li>'+item.discuss+'</li>');
+                });
+            }
+        });
+    }
+
+</script>
+<script>
+    $.ajax({
+        type:'post',
+        url:'api/taocan.php',
+        dataType:'json',
+        success:function (data) {
+            var html=template('newtuiTpl',data);
+            $('.newtui').html(html);
+        }
+    })
+</script>
+
+</body>
+</html>

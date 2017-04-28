@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<header>
+    <div class="w">
+        <ul>
+            <li class="login"><a href="javascript:;">登录</a></li>
+            <li class="reg"><a href="javascript:;">注册</a></li>
+            <li class="discuss"><a href="javascript:;">顾客评论</a></li>
+            <li class="photoshow"><a href="javascript:;">照片展示</a></li>
+            <li class="myphoto"><a href="javascript:;">我的照片</a></li>
+            <li class="about"><a href="javascript:;">关于我们</a></li>
+        </ul>
+    </div>
+</header>
+<div class="showdiscuss">
+    <div class="w">
+        <div class="alldiscuss">
+            <ul class='client fl'>
+            </ul>
+            <ul class='admin fr'>
+            </ul>
+            <div class="append">
+                <form>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <input type="button"value='确定追加'id='adddiscuss'>
+                </form>
+                <div class="close">x</div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="w">
+        <div class="link">
+            <h2>相关链接</h2>
+            <div>
+
+                <a href='http://sanya.v2.net.cn' target='_blank'>三亚婚纱摄影</a>
+
+                <a href='http://www.giexya.com' target='_blank'>干洗连锁</a>
+
+                <a href='http://fmcz.forusbaby.com' target='_blank'>去美国生孩子</a>
+
+                <a href='http://www.nnguphoto.com/' target='_blank'>南宁婚纱摄影</a>
+
+                <a href='http://yingtong.jiameng.com' target='_blank'>母婴生活馆加盟</a>
+
+                <a href='http://www.siteloop.net/' target='_blank'>网站查</a>
+
+                <a href='http://www.touch-baby.com' target='_blank'>上海儿童摄影</a>
+
+                <a href='http://www.8-888.cn' target='_blank'>世纪新闻</a>
+
+                <a href='http://nc.focus.cn' target='_blank'>南昌房产网</a>
+
+                <a href='http://www.meerlove.com' target='_blank'>成都摄影工作室</a>
+
+                <a href='http://www.gzartiz.com/' target='_blank'>北京婚纱摄影</a>
+
+                <a href='http://www.artiz1314.com/' target='_blank'>天津婚纱摄影</a>
+
+                <a href='http://www.shtotem.com' target='_blank'>金属条码</a>
+
+                <a href='http://www.sunghost.cn' target='_blank'>上科互联</a>
+
+                <a href='http://www.hunsha11.com' target='_blank'>北京婚纱摄影</a>
+
+                <a href='http://ganxi.dqdaily.com' target='_blank'>洗衣店加盟</a>
+
+                <a href='http://www.qgqc.cn' target='_blank'>厦门婚纱摄影</a>
+
+                <a href='http://www.forusbaby.com' target='_blank'>赴美生子</a>
+
+                <a href='http://www.officese.com' target='_blank'>中华写字楼网</a>
+
+                <a href='http://www.forusbaby.com.cn' target='_blank'>赴美产子</a>
+            </div>
+        </div>
+        <div class="f3">
+            <div class="f4 clearfix">
+                <dl style="padding:0; background:none;">
+                    <dt><a href="/baby/aboutus.html" title="关于我们"></a></dt>
+                    <dd><a href="/baby/aboutus.html" title="关于我们">关于我们 ABOUT US</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="/baby/contact.html" title="联系我们"></a></dt>
+                    <dd><a title="联系我们" href="/baby/contact.html">联系我们 CONTACT US</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="/hotnews/" title="新闻中心"></a></dt>
+                    <dd><a href="/hotnews/" title="公司新闻">公司新闻 NEWS</a></dd>
+                    <dd><a href="/child/" title="育儿知识">育儿知识 KNOWLOAGE</a></dd>
+                    <dd><a href="/tips/" title="服务小贴士">服务小贴士 TIPS</a></dd>
+                    <dd><a href="/huodong/" title="最新活动">最新活动 EVENT</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="/wedding/" title="作品欣赏"></a></dt>
+                    <dd><a href="/wedding/" title="最新客片">作品欣赏 WEDDING</a></dd>
+                    <dd><a href="/customer/" title="客片欣赏">客片欣赏 SHOW CASE</a></dd>
+                    <dd><a href="/dress/" title="宝宝服装">宝宝服装 DRESS</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="/service/" title="服务报价"></a></dt>
+                    <dd><a href="/service/" title="宝宝摄影服务">宝宝摄影服务 PRISE</a></dd>
+                </dl>
+                <div class="clear"></div>
+            </div>
+            <div class="code">
+                <img src="imgs/code.jpg" alt="">
+                <h2>亲亲儿童摄影</h2>
+            </div>
+            <p style="color:#996600">
+                <br><br>Seoul Baby Studio隶属于韩艺投资管理（上海）有限公司
+
+                <br>公司地址：徐汇区襄阳南路（近建国西路）
+
+                <br>公司电话：Tel :13818227576</p>
+        </div>
+    </div>
+</footer>
+<script src='lib/jquery/jquery-1.12.2.js'></script>
+<script src='lib/template/template-native.js'></script>
+<script type='txt/template'id='discussTpl'>
+    <%for(var i=0;i<rows.length;i++){%>
+        <li><span class='name'>姓名:</span><i class='i-name'><%=rows[i].username%></i><span class='hua'>评论:</span><i class='i-discuss'><%=rows[i].discuss%></i><i class='i-date'><%=rows[i].date%></i>
+            <button>追加</button>
+        </li>
+    <%}%>
+</script>
+<script type='text/template'id='rediscussTpl'>
+    <%for(var i=0;i<rows.length;i++){%>
+    <li>
+        <%if(rows[i].fatherid!=0){%><span class='rename'>掌柜回复:</span><%}%>
+        <i class='i-rediscuss'><%=rows[i].content%></i>
+        <i class='i-date'><%=rows[i].date%></i>
+    </li>
+    <%}%>
+</script>
+<script>
+    $('.append').hide();
+    $.ajax({
+        type:'get',
+        url:'api/alldiscuss.php',
+        dataType:'json',
+        success:function (data) {
+            var html=template('discussTpl',data);
+            $('.showdiscuss .client').html(html);
+            $('.client li').on('click','button',function () {
+                $('.append').show();
+                var username=$(this).parent('li').find('.i-name').html();
+                $('#adddiscuss').click(function () {
+                    $.ajax({
+                        type:'get',
+                        url:'api/discuss.php',
+                        dataType:'json',
+                        data:{
+                            user:username,
+                            discuss:$('.append textarea').val()
+                        },
+                        success:function (result) {
+                            console.log(result);
+                            if(result.status=='ok') {
+                                location.reload();
+                            }
+                        }
+                    })
+                });
+            });
+            $.ajax({
+                type:'get',
+                url:'api/rediscuss.php',
+                dataType:'json',
+                success:function (res) {
+                    console.log(res);
+                    var tpl=template('rediscussTpl',res);
+                    $('.showdiscuss .admin').html(tpl);
+                }
+            })
+        }
+    });
+    $('.close').click(function () {
+        $('.append').hide();
+    });
+
+</script>
+</body>
+</html>

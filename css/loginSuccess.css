@@ -1,0 +1,370 @@
+/*导航*/
+header {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    background: #3EAEA0;
+
+}
+header li {
+    float: left;
+    margin-left: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+header li a {
+    padding: 0 10px;
+    color: #fff;
+}
+header li:hover {
+    background: #4cae4c;
+    opacity: .7;
+}
+
+
+/*内容部分*/
+.content {
+    height: 500px;
+    border-bottom: 1px solid #3EAEA0;
+    margin-top: 20px;
+}
+.con_left {
+    width: 300px;
+    float: left;
+    border-right: 1px solid #3EAEA0;
+    padding-left: 50px;
+    height: 500px;
+}
+.con_left h2 {
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #3EAEA0;
+    text-shadow: 0 0 3px lime;
+    margin-bottom: 10px;
+    font-family:"华文行楷";
+    margin-left: 50px;
+}
+.con_left h2 span {
+    color: green;
+    margin: 0 0px 0 1px;
+    font-size: 30px;
+    text-shadow: 0 0 3px lime;
+}
+.con_left .photo {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-top: 120px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.con_left .photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.con_right {
+    float: right;
+    height: 480px;
+    /*background: pink;*/
+    width: 800px;
+    overflow: hidden;
+}
+.con_right ul {
+    width: 100%;
+    height: 300%;
+}
+.con_right ul li {
+    width: 100%;
+    height: 33.333%;
+    padding-top: 20px;
+}
+.con_right li >h3 {
+    font-size: 20px;
+    text-shadow: 0 0 3px red;
+    margin-left: 20px;
+    padding-left: 5px;
+    border-left: 3px solid orangered;
+    color: #ac2925;
+    font-weight: bold;
+
+}
+.con_right li >h3 input {
+    width: 50px;
+    height: 20px;
+    background: #4cae4c;
+    opacity: .7;
+    border-radius: 2px;
+    margin-left: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.photos {
+    position: relative;
+}
+.photos ul {
+    float: left;
+    box-sizing: border-box;
+    width: 1000%;
+
+}
+.photos .selectDate {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 38px;
+    background: #fff;
+    z-index: 999;
+}
+.photos .selected {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 38px;
+    background: #fff;
+    z-index: 999;
+}
+.photos .selectDate h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 20px;
+
+}
+.photos .selected h4 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.photos .selectDate a {
+    display: block;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+    color: #4cae4c;
+}
+.photos .selectDate a:hover {
+    text-decoration: underline;
+}
+.photos .items li {
+    width: 800px;
+    height: 440px;
+    float: left;
+    padding-left: 20px;
+}
+.photos .items .img {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+}
+.photos .items .img img {
+    width: 130px;
+    height: 130px;
+}
+.photos .items .img input {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*页码*/
+.holder {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+.holder a {
+    font-size:12px;
+    cursor:pointer;
+    margin:0 5px;
+    color: #fff;
+    background: #3EAEA0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+}
+.holder a:hover {
+    background-color:#3c763d;
+    color:#fff;
+}
+
+
+/*订单部分*/
+.orders {
+    padding-top: 20px;
+    color: #3EAEA0;
+}
+.orders p {
+    width: 700px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.orders i.code,i.price,i.kind {
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+    padding-right: 5px;
+}
+.orders .orderDate {
+    float: right;
+    margin-right: 20px;
+}
+/*评论区域*/
+.discuss {
+    width: 100%;
+}
+.discuss textarea {
+    width: 80%;
+    height: 100px;
+}
+.discuss h2 {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    background: #3EAEA0;
+    border-bottom: 2px solid darkseagreen;
+    margin-bottom: 2px;
+}
+.left {
+    float: left;
+    width: 10%;
+    /*margin-left: 30px;*/
+}
+.left ul li {
+    width: 100%;
+    font-size: 20px;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid #1b6d85;
+    text-align: center;
+    cursor: pointer;
+    color: #3EAEA0;
+    font-weight: bold;
+}
+.left ul li:hover {
+    background: #3EAEA0;
+    color: #fff;
+}
+.right {
+    float: right;
+    width: 90%;
+    height: 140px;
+}
+.right .showDiscuss {
+    width: 100%;
+    height: 100%;
+    background: #3EAEA0;
+    color: #fff;
+}
+.right .writeDiscuss {
+    width: 100%;
+    height: 100%;
+    background: #3EAEA0;
+}
+.showDiscuss {
+    overflow: auto;
+}
+.right .showDiscuss ul {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.right .showDiscuss ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 18px;
+}
+.right textarea {
+    margin-top: 50px;
+    width: 80%;
+    height: 40px;
+    float: left;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.right input {
+    width: 10%;
+    margin-top: 55px;
+    float: left;
+    background: #fff;
+    color: #3EAEA0;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*最新推荐*/
+.con_right .tab .tuijian .newtui {
+    width: 100%;
+    height: 450px;
+    padding-top: 10px;
+}
+.con_right .tab .tuijian .newtui li {
+    width: 50%;
+    height: 200px;
+    /*border:1px solid #ccc;*/
+    float: left;
+    padding-left: 10px;
+}
+.con_right .tab .tuijian .newtui li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+.newtui li i {
+    width: 250px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.newtui li h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3EAEA0;
+    margin-bottom: 5px;
+}
+.newtui li .taoprice{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 20px;
+    background: #3EAEA0;
+    border:1px solid #ccc;
+    width: 150px;
+    height: 33px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
+.newtui li p {
+    line-height: 20px;
+    color: #3EAEA0;
+    margin-top: 5px;
+}
